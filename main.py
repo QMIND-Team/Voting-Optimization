@@ -18,7 +18,7 @@ num = len(voting_loc)
 clusters = [[] for i in range(num)] # holds civic 
 distances = [[] for i in range(len(civic_loc))]
 
-
+'''
 for i in range(len(civic_loc)):
     
     # Find the absolute distance between house and each voting location
@@ -31,4 +31,4 @@ for i in range(len(civic_loc)):
     
     # Store the top ten closest voting locations to each civic address
     distances[i] = voting_loc['num'][0:9]
-     
+'''    

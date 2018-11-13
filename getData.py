@@ -21,7 +21,7 @@ def get_data():
     for i in range(len(voting_data['features'])):
         longitudes.append(voting_data['features'][i]['geometry']['coordinates'][0])
         latitudes.append(voting_data['features'][i]['geometry']['coordinates'][1])
-        addresses.append(voting_data['features'][i]['properties']['votinglocationaddress'])
+        addresses.append(voting_data['features'][i]['properties']['votinglocationaddress']+', Kingston, ON')
         location_number.append(voting_data['features'][i]['properties']['votinglocationnumber'])
         
     vloc_info['num'] = location_number
@@ -41,7 +41,7 @@ def get_data():
         longitudes.append(civic_data['features'][i]['geometry']['coordinates'][0])
         latitudes.append(civic_data['features'][i]['geometry']['coordinates'][1])
         address = (civic_data['features'][i]['properties']['address_number']+
-                 ' '+civic_data['features'][i]['properties']['street'])
+                 ' '+civic_data['features'][i]['properties']['street']+' Kingston, ON')
         addresses.append(address)
      
     cloc_info['addy'] = addresses
