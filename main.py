@@ -8,8 +8,9 @@ Created on Thu Nov  8 18:36:18 2018
 
 import pandas as pd
 import getData
-from matplotlib import pyplot as plt
+import googlemaps
 
+gmaps = googlemaps.Client(key='AIzaSyDpDRMQ-jmQ0wNpPt3BGyBmgPb8UmsJOEw')
 
 voting_loc, civic_loc = getData.get_data()
 num = len(voting_loc)
