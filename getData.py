@@ -2,7 +2,7 @@
 """
 Created on Thu Nov  8 18:36:18 2018
 
-@author: Caelum Kamps, Skato, Dan, Denis, Ali
+@author: Caelum Kamps, Sean Kato, Dan, Denis, Ali
 """
 
 import json
